@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1504957047416" clover="4.2.0">
+   <project name="java-junit-xml-merger 1.0.0" timestamp="1504957042178">
+      <metrics coveredelements="130" complexity="33" loc="342" methods="25" classes="4" statements="91" packages="2" coveredconditionals="14" coveredmethods="25" elements="130" ncloc="203" files="4" conditionals="14" coveredstatements="91"/>
+      <package name="io.codeclou.java.junit.xml.merger">
+         <metrics coveredelements="77" complexity="12" loc="162" methods="4" classes="2" statements="59" coveredconditionals="14" coveredmethods="4" elements="77" ncloc="105" files="2" conditionals="14" coveredstatements="59"/>
+         <file path="/Users/clouless/git/java-junit-xml-merger/src/main/java/io/codeclou/java/junit/xml/merger/JunitXmlParser.java" name="JunitXmlParser.java">
+            <metrics coveredelements="74" coveredconditionals="14" complexity="11" loc="129" coveredmethods="3" methods="3" elements="74" classes="1" ncloc="98" statements="57" conditionals="14" coveredstatements="57"/>
+            <class name="JunitXmlParser">
+               <metrics coveredelements="74" coveredconditionals="14" complexity="11" coveredmethods="3" methods="3" elements="74" statements="57" conditionals="14" coveredstatements="57"/>
+            </class>
+            <line complexity="1" visibility="protected" signature="parseTestSuite(File) : TestSuite" num="53" count="3" type="method"/>
+            <line num="54" count="3" type="stmt"/>
+            <line num="55" count="3" type="stmt"/>
+            <line num="56" count="3" type="stmt"/>
+            <line num="57" count="3" type="stmt"/>
+            <line complexity="1" visibility="public" signature="transform(Node) : TestSuite" num="60" count="5" type="method"/>
+            <line num="61" count="5" type="stmt"/>
+            <line num="62" count="5" type="stmt"/>
+            <line num="63" count="5" type="stmt"/>
+            <line num="64" count="5" type="stmt"/>
+            <line num="65" count="5" type="stmt"/>
+            <line num="66" count="5" type="stmt"/>
+            <line num="67" count="5" type="stmt"/>
+            <line num="68" count="5" type="stmt"/>
+            <line num="69" count="5" type="stmt"/>
+            <line complexity="9" visibility="protected" signature="run(String[]) : void" num="72" count="6" type="method"/>
+            <line num="73" count="6" type="stmt"/>
+            <line num="74" count="6" type="stmt"/>
+            <line num="75" count="6" type="stmt"/>
+            <line num="76" count="6" type="stmt"/>
+            <line num="77" count="6" type="stmt"/>
+            <line num="78" count="6" type="stmt"/>
+            <line num="79" count="6" type="stmt"/>
+            <line num="80" count="6" type="stmt"/>
+            <line num="81" count="6" type="stmt"/>
+            <line falsecount="5" truecount="1" num="81" type="cond"/>
+            <line num="82" count="1" type="stmt"/>
+            <line num="83" count="1" type="stmt"/>
+            <line num="85" count="6" type="stmt"/>
+            <line falsecount="4" truecount="2" num="85" type="cond"/>
+            <line num="86" count="2" type="stmt"/>
+            <line num="87" count="2" type="stmt"/>
+            <line num="89" count="6" type="stmt"/>
+            <line falsecount="3" truecount="3" num="89" type="cond"/>
+            <line num="90" count="3" type="stmt"/>
+            <line num="91" count="3" type="stmt"/>
+            <line num="93" count="6" type="stmt"/>
+            <line falsecount="3" truecount="3" num="93" type="cond"/>
+            <line num="94" count="3" type="stmt"/>
+            <line num="95" count="3" type="stmt"/>
+            <line num="96" count="3" type="stmt"/>
+            <line num="97" count="3" type="stmt"/>
+            <line num="99" count="3" type="stmt"/>
+            <line num="101" count="1" type="stmt"/>
+            <line num="102" count="1" type="stmt"/>
+            <line num="103" count="1" type="stmt"/>
+            <line num="105" count="3" type="stmt"/>
+            <line falsecount="2" truecount="1" num="105" type="cond"/>
+            <line num="106" count="1" type="stmt"/>
+            <line num="107" count="1" type="stmt"/>
+            <line num="108" count="1" type="stmt"/>
+            <line num="110" count="3" type="stmt"/>
+            <line falsecount="1" truecount="2" num="110" type="cond"/>
+            <line num="111" count="2" type="stmt"/>
+            <line num="112" count="2" type="stmt"/>
+            <line num="113" count="2" type="stmt"/>
+            <line num="114" count="2" type="stmt"/>
+            <line num="115" count="2" type="stmt"/>
+            <line num="116" count="3" type="stmt"/>
+            <line falsecount="1" truecount="2" num="116" type="cond"/>
+            <line num="117" count="2" type="stmt"/>
+            <line num="118" count="2" type="stmt"/>
+            <line num="121" count="2" type="stmt"/>
+            <line num="122" count="2" type="stmt"/>
+            <line num="123" count="2" type="stmt"/>
+            <line num="124" count="2" type="stmt"/>
+            <line num="125" count="2" type="stmt"/>
+         </file>
+         <file path="/Users/clouless/git/java-junit-xml-merger/src/main/java/io/codeclou/java/junit/xml/merger/Merger.java" name="Merger.java">
+            <metrics coveredelements="3" coveredconditionals="0" complexity="1" loc="33" coveredmethods="1" methods="1" elements="3" classes="1" ncloc="7" statements="2" conditionals="0" coveredstatements="2"/>
+            <class name="Merger">
+               <metrics coveredelements="3" coveredconditionals="0" complexity="1" coveredmethods="1" methods="1" elements="3" statements="2" conditionals="0" coveredstatements="2"/>
+            </class>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="28" count="1" type="method"/>
+            <line num="29" count="1" type="stmt"/>
+            <line num="30" count="1" type="stmt"/>
+         </file>
+      </package>
+      <package name="io.codeclou.java.junit.xml.merger.model">
+         <metrics coveredelements="53" complexity="21" loc="180" methods="21" classes="2" statements="32" coveredconditionals="0" coveredmethods="21" elements="53" ncloc="98" files="2" conditionals="0" coveredstatements="32"/>
+         <file path="/Users/clouless/git/java-junit-xml-merger/src/main/java/io/codeclou/java/junit/xml/merger/model/TestSuite.java" name="TestSuite.java">
+            <metrics coveredelements="28" coveredconditionals="0" complexity="14" loc="94" coveredmethods="14" methods="14" elements="28" classes="1" ncloc="53" statements="14" conditionals="0" coveredstatements="14"/>
+            <class name="TestSuite">
+               <metrics coveredelements="28" coveredconditionals="0" complexity="14" coveredmethods="14" methods="14" elements="28" statements="14" conditionals="0" coveredstatements="14"/>
+            </class>
+            <line complexity="1" visibility="public" signature="getTests() : Long" num="39" count="8" type="method"/>
+            <line num="40" count="8" type="stmt"/>
+            <line complexity="1" visibility="public" signature="setTests(Long) : void" num="43" count="6" type="method"/>
+            <line num="44" count="6" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getFailures() : Long" num="47" count="8" type="method"/>
+            <line num="48" count="8" type="stmt"/>
+            <line complexity="1" visibility="public" signature="setFailures(Long) : void" num="51" count="6" type="method"/>
+            <line num="52" count="6" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getErrors() : Long" num="55" count="2" type="method"/>
+            <line num="56" count="2" type="stmt"/>
+            <line complexity="1" visibility="public" signature="setErrors(Long) : void" num="59" count="6" type="method"/>
+            <line num="60" count="6" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getSkipped() : Long" num="63" count="2" type="method"/>
+            <line num="64" count="2" type="stmt"/>
+            <line complexity="1" visibility="public" signature="setSkipped(Long) : void" num="67" count="6" type="method"/>
+            <line num="68" count="6" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getName() : String" num="71" count="2" type="method"/>
+            <line num="72" count="2" type="stmt"/>
+            <line complexity="1" visibility="public" signature="setName(String) : void" num="75" count="6" type="method"/>
+            <line num="76" count="6" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getTime() : Double" num="79" count="8" type="method"/>
+            <line num="80" count="8" type="stmt"/>
+            <line complexity="1" visibility="public" signature="setTime(Double) : void" num="83" count="6" type="method"/>
+            <line num="84" count="6" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getXml() : Node" num="87" count="6" type="method"/>
+            <line num="88" count="6" type="stmt"/>
+            <line complexity="1" visibility="public" signature="setXml(Node) : void" num="91" count="6" type="method"/>
+            <line num="92" count="6" type="stmt"/>
+         </file>
+         <file path="/Users/clouless/git/java-junit-xml-merger/src/main/java/io/codeclou/java/junit/xml/merger/model/TestSuites.java" name="TestSuites.java">
+            <metrics coveredelements="25" coveredconditionals="0" complexity="7" loc="86" coveredmethods="7" methods="7" elements="25" classes="1" ncloc="45" statements="18" conditionals="0" coveredstatements="18"/>
+            <class name="TestSuites">
+               <metrics coveredelements="25" coveredconditionals="0" complexity="7" coveredmethods="7" methods="7" elements="25" statements="18" conditionals="0" coveredstatements="18"/>
+            </class>
+            <line complexity="1" visibility="public" signature="getTests() : Long" num="44" count="4" type="method"/>
+            <line num="45" count="4" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getFailures() : Long" num="47" count="4" type="method"/>
+            <line num="48" count="4" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getTime() : Double" num="50" count="4" type="method"/>
+            <line num="51" count="4" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getName() : String" num="57" count="5" type="method"/>
+            <line num="58" count="5" type="stmt"/>
+            <line complexity="1" visibility="public" signature="setName(String) : void" num="60" count="4" type="method"/>
+            <line num="61" count="4" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getTestSuites() : List&lt;TestSuite&gt;" num="63" count="5" type="method"/>
+            <line num="64" count="5" type="stmt"/>
+            <line complexity="1" visibility="public" signature="toXml() : Document" num="70" count="3" type="method"/>
+            <line num="71" count="3" type="stmt"/>
+            <line num="72" count="3" type="stmt"/>
+            <line num="73" count="3" type="stmt"/>
+            <line num="74" count="3" type="stmt"/>
+            <line num="75" count="3" type="stmt"/>
+            <line num="76" count="3" type="stmt"/>
+            <line num="77" count="3" type="stmt"/>
+            <line num="78" count="3" type="stmt"/>
+            <line num="79" count="3" type="stmt"/>
+            <line num="80" count="3" type="stmt"/>
+            <line num="81" count="4" type="stmt"/>
+            <line num="83" count="3" type="stmt"/>
+         </file>
+      </package>
+   </project>
+   <testproject name="java-junit-xml-merger 1.0.0" timestamp="1504957042178">
+      <metrics coveredelements="86" complexity="15" loc="341" methods="15" classes="6" statements="71" packages="2" coveredconditionals="0" coveredmethods="15" elements="86" ncloc="169" files="6" conditionals="0" coveredstatements="71"/>
+      <package name="io.codeclou.java.junit.xml.merger">
+         <metrics coveredelements="63" complexity="11" loc="210" methods="11" classes="3" statements="52" coveredconditionals="0" coveredmethods="11" elements="63" ncloc="118" files="3" conditionals="0" coveredstatements="52"/>
+         <file path="/Users/clouless/git/java-junit-xml-merger/src/test/java/io/codeclou/java/junit/xml/merger/GetterSetterValidator.java" name="GetterSetterValidator.java">
+            <metrics coveredelements="2" coveredconditionals="0" complexity="1" loc="43" coveredmethods="1" methods="1" elements="2" classes="1" ncloc="15" statements="1" conditionals="0" coveredstatements="1"/>
+            <class name="GetterSetterValidator">
+               <metrics coveredelements="2" coveredconditionals="0" complexity="1" coveredmethods="1" methods="1" elements="2" statements="1" conditionals="0" coveredstatements="1"/>
+            </class>
+            <line complexity="1" visibility="public" signature="validateAccessors(Class&lt;?&gt;) : void" num="39" count="2" type="method"/>
+            <line num="40" count="2" type="stmt"/>
+         </file>
+         <file path="/Users/clouless/git/java-junit-xml-merger/src/test/java/io/codeclou/java/junit/xml/merger/JunitXmlParserTest.java" name="JunitXmlParserTest.java">
+            <metrics coveredelements="56" coveredconditionals="0" complexity="8" loc="115" coveredmethods="8" methods="8" elements="56" classes="1" ncloc="80" statements="48" conditionals="0" coveredstatements="48"/>
+            <class name="JunitXmlParserTest">
+               <metrics coveredelements="56" complexity="8" methods="8" testruns="7" statements="48" coveredconditionals="0" coveredmethods="8" elements="56" testfailures="0" testduration="0.199" conditionals="0" coveredstatements="48" testpasses="7"/>
+            </class>
+            <line complexity="1" visibility="private" signature="getTestFile(String) : File" num="37" count="1" type="method"/>
+            <line num="38" count="1" type="stmt"/>
+            <line num="39" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testParse() : void" num="42" testsuccess="true" count="1" testduration="0.07" type="method"/>
+            <line num="44" count="1" type="stmt"/>
+            <line num="45" count="1" type="stmt"/>
+            <line num="46" count="1" type="stmt"/>
+            <line num="47" count="1" type="stmt"/>
+            <line num="48" count="1" type="stmt"/>
+            <line num="49" count="1" type="stmt"/>
+            <line num="50" count="1" type="stmt"/>
+            <line num="51" count="1" type="stmt"/>
+            <line num="52" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testRunInvalidInput1() : void" num="55" testsuccess="true" count="1" testduration="0.004" type="method"/>
+            <line num="57" count="1" type="stmt"/>
+            <line num="58" count="1" type="stmt"/>
+            <line num="59" count="1" type="stmt"/>
+            <line num="60" count="1" type="stmt"/>
+            <line num="61" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testRunInvalidInput2() : void" num="64" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="66" count="1" type="stmt"/>
+            <line num="67" count="1" type="stmt"/>
+            <line num="68" count="1" type="stmt"/>
+            <line num="69" count="1" type="stmt"/>
+            <line num="70" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testRunInvalidInput3() : void" num="73" testsuccess="true" count="1" testduration="0.001" type="method"/>
+            <line num="75" count="1" type="stmt"/>
+            <line num="76" count="1" type="stmt"/>
+            <line num="77" count="1" type="stmt"/>
+            <line num="78" count="1" type="stmt"/>
+            <line num="79" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testRunValidInputWithInvalidFolders() : void" num="82" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="84" count="1" type="stmt"/>
+            <line num="85" count="1" type="stmt"/>
+            <line num="86" count="1" type="stmt"/>
+            <line num="87" count="1" type="stmt"/>
+            <line num="88" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testRunValidInputWithValidFolders() : void" num="91" testsuccess="true" count="1" testduration="0.01" type="method"/>
+            <line num="93" count="1" type="stmt"/>
+            <line num="94" count="1" type="stmt"/>
+            <line num="95" count="1" type="stmt"/>
+            <line num="96" count="1" type="stmt"/>
+            <line num="97" count="1" type="stmt"/>
+            <line num="98" count="1" type="stmt"/>
+            <line num="99" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testRunValidInputWithEmptyInputFolder() : void" num="102" testsuccess="true" count="1" testduration="0.114" type="method"/>
+            <line num="104" count="1" type="stmt"/>
+            <line num="105" count="1" type="stmt"/>
+            <line num="106" count="1" type="stmt"/>
+            <line num="107" count="1" type="stmt"/>
+            <line num="108" count="1" type="stmt"/>
+            <line num="109" count="1" type="stmt"/>
+            <line num="110" count="1" type="stmt"/>
+            <line num="111" count="1" type="stmt"/>
+            <line num="112" count="1" type="stmt"/>
+            <line num="113" count="1" type="stmt"/>
+         </file>
+         <file path="/Users/clouless/git/java-junit-xml-merger/src/test/java/io/codeclou/java/junit/xml/merger/MergerTest.java" name="MergerTest.java">
+            <metrics coveredelements="5" coveredconditionals="0" complexity="2" loc="52" coveredmethods="2" methods="2" elements="5" classes="1" ncloc="23" statements="3" conditionals="0" coveredstatements="3"/>
+            <class name="MergerTest">
+               <metrics coveredelements="5" complexity="2" methods="2" testruns="1" statements="3" coveredconditionals="0" coveredmethods="2" elements="5" testfailures="0" testduration="0.044" conditionals="0" coveredstatements="3" testpasses="1"/>
+            </class>
+            <line complexity="1" visibility="public" signature="init() : void" num="41" count="1" type="method"/>
+            <line num="43" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testMergerValidInput() : void" num="46" testsuccess="true" count="1" testduration="0.044" type="method"/>
+            <line num="49" count="1" type="stmt"/>
+            <line num="50" count="1" type="stmt"/>
+         </file>
+      </package>
+      <package name="io.codeclou.java.junit.xml.merger.model">
+         <metrics coveredelements="23" complexity="4" loc="131" methods="4" classes="3" statements="19" coveredconditionals="0" coveredmethods="4" elements="23" ncloc="51" files="3" conditionals="0" coveredstatements="19"/>
+         <file path="/Users/clouless/git/java-junit-xml-merger/src/test/java/io/codeclou/java/junit/xml/merger/model/TestSuiteTest.java" name="TestSuiteTest.java">
+            <metrics coveredelements="2" coveredconditionals="0" complexity="1" loc="34" coveredmethods="1" methods="1" elements="2" classes="1" ncloc="9" statements="1" conditionals="0" coveredstatements="1"/>
+            <class name="TestSuiteTest">
+               <metrics coveredelements="2" complexity="1" methods="1" testruns="1" statements="1" coveredconditionals="0" coveredmethods="1" elements="2" testfailures="0" testduration="0.011" conditionals="0" coveredstatements="1" testpasses="1"/>
+            </class>
+            <line complexity="1" visibility="public" signature="testPojoGetterSetter() : void" num="30" testsuccess="true" count="1" testduration="0.011" type="method"/>
+            <line num="32" count="1" type="stmt"/>
+         </file>
+         <file path="/Users/clouless/git/java-junit-xml-merger/src/test/java/io/codeclou/java/junit/xml/merger/model/TestSuitesTest.java" name="TestSuitesTest.java">
+            <metrics coveredelements="16" coveredconditionals="0" complexity="2" loc="56" coveredmethods="2" methods="2" elements="16" classes="1" ncloc="28" statements="14" conditionals="0" coveredstatements="14"/>
+            <class name="TestSuitesTest">
+               <metrics coveredelements="16" complexity="2" methods="2" testruns="2" statements="14" coveredconditionals="0" coveredmethods="2" elements="16" testfailures="0" testduration="0.10200000000000001" conditionals="0" coveredstatements="14" testpasses="2"/>
+            </class>
+            <line complexity="1" visibility="public" signature="testPojoGetterSetter() : void" num="34" testsuccess="true" count="1" testduration="0.097" type="method"/>
+            <line num="36" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testToXml() : void" num="39" testsuccess="true" count="1" testduration="0.005" type="method"/>
+            <line num="41" count="1" type="stmt"/>
+            <line num="42" count="1" type="stmt"/>
+            <line num="43" count="1" type="stmt"/>
+            <line num="44" count="1" type="stmt"/>
+            <line num="45" count="1" type="stmt"/>
+            <line num="46" count="1" type="stmt"/>
+            <line num="47" count="1" type="stmt"/>
+            <line num="48" count="1" type="stmt"/>
+            <line num="49" count="1" type="stmt"/>
+            <line num="50" count="1" type="stmt"/>
+            <line num="51" count="1" type="stmt"/>
+            <line num="53" count="1" type="stmt"/>
+            <line num="54" count="1" type="stmt"/>
+         </file>
+         <file path="/Users/clouless/git/java-junit-xml-merger/src/test/java/io/codeclou/java/junit/xml/merger/model/XmlHelper.java" name="XmlHelper.java">
+            <metrics coveredelements="5" coveredconditionals="0" complexity="1" loc="41" coveredmethods="1" methods="1" elements="5" classes="1" ncloc="14" statements="4" conditionals="0" coveredstatements="4"/>
+            <class name="XmlHelper">
+               <metrics coveredelements="5" coveredconditionals="0" complexity="1" coveredmethods="1" methods="1" elements="5" statements="4" conditionals="0" coveredstatements="4"/>
+            </class>
+            <line complexity="1" visibility="package" signature="xmlFromString(String) : Node" num="35" count="2" type="method"/>
+            <line num="36" count="2" type="stmt"/>
+            <line num="37" count="2" type="stmt"/>
+            <line num="38" count="2" type="stmt"/>
+            <line num="39" count="2" type="stmt"/>
+         </file>
+      </package>
+   </testproject>
+</coverage>

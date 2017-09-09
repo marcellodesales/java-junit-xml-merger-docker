@@ -1,0 +1,2 @@
+processClover (  {"children":["io/codeclou/java/junit/xml/merger/","io/codeclou/java/junit/xml/merger/model/"],"name":"Clover database Sa Sep 9 2017 13:37:19 MESZ","stats":{"AvgMethodComplexity":1.32,"Complexity":33,"ErroneousTests":0,"FailingTests":0,"FilteredElements":0,"PassingTests":0,"PcErroneousTests":-1,"PcFailingTests":-1,"PcPassingTests":-1,"TestExecutionTime":0,"Tests":0,"TotalChildren":2,"TotalPercentageCovered":100,"TotalStatements":91,"UncoveredElements":0},"title":"java-junit-xml-merger 1.0.0"}
+ ); 
