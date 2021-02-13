@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+
+ java-junit-xml-merger:
+    image: marcellodesales/java-junit-xml-merger
+    build: .
+    command: -i=/test-results/test -o=/test-results/junit-testsuites.xml -s="Supercash DistanceMatrix Tests Suite"
+    volumes:
+      - ./example/test-results:/test-results
