@@ -7,7 +7,6 @@
 [![](https://codeclou.github.io/doc/badges/generated/test-coverage-100.svg?v2)](https://codeclou.github.io/java-junit-xml-merger/test-coverage/1.0.1/)
 ----
 
-
 &nbsp;
 
 ### Is this for me?
@@ -40,7 +39,37 @@ then this is for you
 ----
 &nbsp;
 
-### Usage
+## Usage
+
+## Docker
+
+* Using a docker container to a local project:
+  * Considering `$(pwd)/build/test-results` is a directory with `TEST-*.xml` from Junit
+
+```console
+docker run -ti -v $(pwd)/build/test-results:/test-results \
+                marcellodesales/java-junit-xml-merger \ 
+                   -i=/test-results/test \
+                   -o=/test-results/junit-testsuites.xml 
+                   -s="Super Tests Suite"
+```
+
+* Same with the provided example `docker-compose-example.yaml`
+
+```console
+$ docker-compose -f docker-compose-example.yaml up
+Recreating java-junit-xml-merger-docker_java-junit-xml-merger_1 ... done
+Attaching to java-junit-xml-merger-docker_java-junit-xml-merger_1
+java-junit-xml-merger_1  | +-------------------------+
+java-junit-xml-merger_1  | |  Java Junit Xml Merger  |
+java-junit-xml-merger_1  | +-------------------------+
+java-junit-xml-merger_1  | Success >> All input parameters ok
+java-junit-xml-merger_1  | Success >> All files and folders ok
+java-junit-xml-merger_1  | Info >> adding TEST-cash.super_.platform.service.distancematrix.ApplicationContextLoadTest.xml to TestSuites
+java-junit-xml-merger_1  | Info >> adding TEST-cash.super_.platform.service.distancematrix.DistanceMatrixControllerIntegrationTests.xml to TestSuites
+```
+
+## Jar
 
 With folder `src/test/resources/` containing multiple `*.xml` files in junit-xml format.
 A combined result will be written to `output.xml`. The Suite name will be `My Suite`.
@@ -56,15 +85,13 @@ java -jar junit-xml-merger.jar \
      -o=output.xml \
      -s="My Suite"
 ```
-
 -----
-&nbsp;
 
 ### Demo
 
-<p align="center"><img src"=width="80%" src="https://codeclou.github.io/java-junit-xml-merger/img/demo.gif" /></p>
+<p align="center"><img width="80%" src="https://codeclou.github.io/java-junit-xml-merger/img/demo.gif" /></p>
   
-```
+```console
 git clone https://github.com/codeclou/java-junit-xml-merger.git src
 cd src
 
@@ -75,14 +102,60 @@ java -jar junit-xml-merger.jar \
      -i=src/test/resources/ \
      -o=output.xml \
      -s="My Suite"
-
-# Show result
-xmllint --format output.xml | pygmentize
 ```
 
-
 ----
-&nbsp;
+
+# Docker Builds
+
+```console
+$ docker-compose build
+Building java-junit-xml-merger
+Step 1/13 : FROM openjdk:17-jdk-alpine3.13 as unmazedboot-jdk-linker
+ ---> 76ab1ef2efdc
+Step 2/13 : WORKDIR /merger
+ ---> Using cache
+ ---> 6d9357bad63b
+Step 3/13 : RUN apk add --no-cache         coreutils         curl
+ ---> Using cache
+ ---> be26c6b43a97
+Step 4/13 : RUN curl -L -o junit-xml-merger.jar https://github.com/codeclou/java-junit-xml-merger/releases/download/1.0.1/junit-xml-merger.jar
+ ---> Using cache
+ ---> 6f1735f728b9
+Step 5/13 : RUN JAR_FILE=junit-xml-merger.jar &&     echo "Generating custom VM for junit-xml-merger" &&     JDK_MODULES=$(jdeps --list-deps --ignore-missing-deps --recursive --compile-time ${JAR_FILE} | awk '{ print $1 }' | paste -s -d"," -) &&     echo "Java Modules for custom JVM for junit-xml-merger: ${JDK_MODULES}" &&     jlink --module-path /opt/jdk/jmods       --verbose       --add-modules ${JDK_MODULES}       --output /opt/jdk-custom       --compress 2       --no-header-files       --no-man-pages
+ ---> Using cache
+ ---> a1dd0c008f45
+
+Step 6/13 : FROM alpine
+ ---> a24bb4013296
+Step 7/13 : LABEL maintainer marcello.desales@gmail.com
+ ---> Running in 481b7ec993fc
+Removing intermediate container 481b7ec993fc
+ ---> 697203b19f30
+Step 8/13 : USER root
+ ---> Running in 6c9763e948e3
+Removing intermediate container 6c9763e948e3
+ ---> cd088230554b
+Step 9/13 : COPY --from=unmazedboot-jdk-linker /opt/jdk-custom /opt/jdk-custom/jre
+ ---> 14ddf0ac1c94
+Step 10/13 : COPY --from=unmazedboot-jdk-linker /merger/junit-xml-merger.jar /runtime/junit-xml-merger.jar
+ ---> fb4805ba4a6a
+Step 11/13 : ENV JAVA_HOME=/opt/jdk-custom/jre
+ ---> Running in c32b7d466645
+Removing intermediate container c32b7d466645
+ ---> 0013f5a95757
+Step 12/13 : ENV PATH="$PATH:$JAVA_HOME/bin"
+ ---> Running in 4fb93510b134
+Removing intermediate container 4fb93510b134
+ ---> 8b9b343f8272
+Step 13/13 : ENTRYPOINT ["java", "-jar", "/runtime/junit-xml-merger.jar"]
+ ---> Running in 34add3885cd3
+Removing intermediate container 34add3885cd3
+ ---> 342cae361750
+
+Successfully built 342cae361750
+Successfully tagged marcellodesales/java-junit-xml-merger:latest
+```
 
 ### License
 
