@@ -24,7 +24,8 @@ FROM alpine
 
 LABEL maintainer marcello.desales@gmail.com
 
-USER root
+# For the xml report
+RUN apk add --no-cache libxslt
 
 # Copy the custom JVM (~45M)
 COPY --from=unmazedboot-jdk-linker /opt/jdk-custom /opt/jdk-custom/jre
@@ -32,8 +33,11 @@ COPY --from=unmazedboot-jdk-linker /opt/jdk-custom /opt/jdk-custom/jre
 # Copy the Jar
 COPY --from=unmazedboot-jdk-linker /merger/junit-xml-merger.jar /runtime/junit-xml-merger.jar
 
+COPY junit-testsuites-txt-report.xslt /runtime
+COPY entrypoint.sh /runtime
+
 # Setting the custom JVM paths
 ENV JAVA_HOME=/opt/jdk-custom/jre
 ENV PATH="$PATH:$JAVA_HOME/bin"
 
-ENTRYPOINT ["java", "-jar", "/runtime/junit-xml-merger.jar"]
+ENTRYPOINT ["/runtime/entrypoint.sh"]

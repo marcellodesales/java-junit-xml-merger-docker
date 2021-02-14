@@ -69,6 +69,35 @@ java-junit-xml-merger_1  | Info >> adding TEST-cash.super_.platform.service.dist
 java-junit-xml-merger_1  | Info >> adding TEST-cash.super_.platform.service.distancematrix.DistanceMatrixControllerIntegrationTests.xml to TestSuites
 ```
 
+* JUnit Testsuites Text Reporting
+
+```console
+$ docker-compose -f tests.docker-compose.yaml up junit-text-tests-report
+WARNING: Found orphan containers (distance-matrix-service_junit-tests-report_1, distance-matrix-service_fromJacoco2Cobertura_1, distance-matrix-service_distance-matrix-service-tests_1) for this project. If you removed or renamed this service in your compose file, you can run this command with the --remove-orphans flag to clean it up.
+Recreating distance-matrix-service_junit-text-tests-report_1 ... done
+Attaching to distance-matrix-service_junit-text-tests-report_1
+junit-text-tests-report_1   | Reporting on /test-results/junit-testsuites.xml
+junit-text-tests-report_1   | Generating the report at /test-results/junit-report.txt
+junit-text-tests-report_1   | WARN: replacing report at '/test-results/junit-report.txt'
+junit-text-tests-report_1   | Testsuites: Supercash
+junit-text-tests-report_1   | --------- ----------- ---------
+junit-text-tests-report_1   |
+junit-text-tests-report_1   | Tests run: 1, Skipped: 0, Failures: 0, Errors: 0, Time elapsed: 1.766 sec
+junit-text-tests-report_1   | --------- ----------- ---------
+junit-text-tests-report_1   | * cash.super_.platform.service.distancematrix.ApplicationContextLoadTest
+junit-text-tests-report_1   | - "[SUCCESS] Load Context Test" took 1.766
+junit-text-tests-report_1   |
+junit-text-tests-report_1   | Tests run: 1, Skipped: 0, Failures: 0, Errors: 0, Time elapsed: 3.555 sec
+junit-text-tests-report_1   | --------- ----------- ---------
+junit-text-tests-report_1   | * cash.super_.platform.service.distancematrix.DistanceMatrixControllerIntegrationTests
+junit-text-tests-report_1   | - "[SUCCESS] Test Get Distance Matrix Success" took 3.555
+junit-text-tests-report_1   |
+junit-text-tests-report_1   | Tests run: 1, Skipped: 1, Failures: 0, Errors: 0, Time elapsed: 0.001 sec
+junit-text-tests-report_1   | --------- ----------- ---------
+junit-text-tests-report_1   | * cash.super_.platform.service.distancematrix.DistanceMatrixGoogleGeoAPICachedProxyServiceTests
+junit-text-tests-report_1   | - "[SKIPPED] Test service to Distance Matrix Success mocking Google Geo API" took 0.001distance-matrix-service_junit-text-tests-report_1 exited with code 0
+```
+
 ## Jar
 
 With folder `src/test/resources/` containing multiple `*.xml` files in junit-xml format.
