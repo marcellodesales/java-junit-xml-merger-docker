@@ -3,15 +3,27 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <xsl:output method="text" indent="no"/>
   <xsl:template match="/testsuites">
-  <xsl:text>Testsuites: </xsl:text><xsl:value-of select="@name" />
-    <xsl:text>
---------- ----------- ---------</xsl:text>
+  <xsl:text>##### Junit Test Suites #####</xsl:text>
+  <xsl:text>
+* Testsuites: </xsl:text><xsl:value-of select="@name" />
+  <xsl:text>
+* Suites Count: </xsl:text>
+  <xsl:value-of select="@tests" />
+  <xsl:text>
+* Total Time: </xsl:text>
+  <xsl:value-of select="@time" />
+  <xsl:text>s
+* Failures: </xsl:text>
+  <xsl:value-of select="@failures" />
+  <xsl:text />
   <xsl:apply-templates select="testsuite" />
   </xsl:template>
   
   <xsl:template match="testsuite">
 <xsl:text>
 
+>>>>>> Test Suite: </xsl:text><xsl:value-of select="@name" />
+<xsl:text>
 Tests run: </xsl:text>
     <xsl:value-of select="@tests" />
     <xsl:text>, Skipped: </xsl:text>
@@ -33,7 +45,7 @@ Tests run: </xsl:text>
 * </xsl:text>
     <xsl:value-of select="@classname" />
     <xsl:text>
-- "</xsl:text>
+- </xsl:text>
     <xsl:choose>
       <xsl:when test="failure"><xsl:text>[FAILURE] </xsl:text><xsl:apply-templates select="failure"/></xsl:when>
       <xsl:when test="error"><xsl:text>[ERROR] </xsl:text><xsl:apply-templates select="error"/></xsl:when>
